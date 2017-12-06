@@ -11,7 +11,7 @@
 .taxi {
 	width: 100%;
 	height: auto;
-	background-image: url(../assets/images/taxi.jpg);
+	background-image: url(../images/taxi.jpg);
 	background-position: 8% 92%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -97,7 +97,7 @@ font-weight: bold;
 .driver {
 	width: 100%;
 	height: auto;
-	background-image: url(../assets/images/conduce.jpg);
+	background-image: url(../images/conduce.jpg);
 	background-size: cover;
 	background-position: 40% 60%;
 	background-repeat: no-repeat;
@@ -213,5 +213,9 @@ font-weight: bold;
 
 .form-control {
 	margin-bottom: 10px;
+}
+
+.pull-left {
+	margin-left: 20px;
 }
 
