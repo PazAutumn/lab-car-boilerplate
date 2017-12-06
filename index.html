@@ -15,7 +15,7 @@
 		<nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-	      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#burger" aria-expanded="false">
 	        	<span class="sr-only">Toggle navigation</span>
 	        	<span class="icon-bar"></span>
 	        	<span class="icon-bar"></span>
@@ -25,13 +25,15 @@
 	      		<img class="responsive-image col-xs" style="width: 80%" src="assets/images/logoForma.png" alt="lab-car">
 	      	</a>
 	    	</div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#!">Viaja</a></li>
-            <li><a href="#!">Conduce</a></li>
-            <li><a href="#inicia-sesion" data-toggle="modal">Inicia sesión</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+	    	<div class="collapse navbar-collapse" id="burger">
+        	<div id="navbar" class="navbar-collapse collapse">
+          	<ul class="nav navbar-nav navbar-right">
+            	<li><a href="#!">Viaja</a></li>
+            	<li><a href="#!">Conduce</a></li>
+            	<li><a href="#inicia-sesion" data-toggle="modal">Inicia sesión</a></li>
+          	</ul>
+        	</div><!--/.nav-collapse -->
+      	</div>
       </div>
     </nav>
 	</section>
@@ -47,7 +49,7 @@
 						</h1>
 						<h2 class="hidden-md hidden-lg">Comienza a viajar con <img src="assets/images/logoBlanco.png" style="width: 30%"></h2>
 						<p class="hidden-xs">Viaja con <img src="assets/images/logoBlanco.png" style="width: 15%"></p>
-						<button class="btn btn-default hidden-xs" type="submit">REGISTRATE</button>
+						<a href="#registrate" data-toggle="modal" class="btn btn-default hidden-xs">REGISTRATE</a>
 						<div class="row hidden-xs" id="input">
 							<div class="col-lg-4">
 								<input type="text">
@@ -59,7 +61,7 @@
 								<input type="text">
 							</div>
 						</div>
-						<button class="btn btn-default hidden-xs col-lg" type="submit">Conviértete en conductor</button>
+						<a href="#conductor" data-toggle="modal" class="btn btn-default hidden-xs col-lg">Conviértete en conductor</a>
 						<button class="btn btn-default col-xs hidden-lg" type="submit">DESCARGA EL APP</button>
 					</div>
 				</div>
@@ -100,7 +102,7 @@
 				<div class="col-lg-4 col-lg-push-8" id="box-driver">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-					<button class="btn btn-default" type="submit">Conviértete en conductor</button>
+					<a href="#conductor" data-toggle="modal" class="btn btn-default" type="submit">Conviértete en conductor</a>
 				</div>
 			</div>
 		</div>
@@ -206,6 +208,8 @@
 		</div>
 	</footer>
 	<!--modales-->
+
+	<!--modal inicia sesion-->
 	<div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -264,6 +268,77 @@
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!--modal registrate-->
+	<div class="modal fade" id="registrate" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="container">
+			    <div class="row">
+			      <div class="col-xs-12 col-lg-6">
+			      	<button class="btn btn-primary btn-block">Ya tienes una cuenta?</button>
+			      	<p style="text-align: center;">O CREA UNA CUENTA NUEVA</p>
+			          <form action="#" method="post" class="form" role="form">
+			            <div class="row">
+			              <div class="col-xs-6 col-md-6">
+			                <input class="form-control" name="firstname" placeholder="Nombre" type="text" required autofocus />
+			              </div>
+			              <div class="col-xs-6 col-md-6">
+											<input class="form-control" name="lastname" placeholder="Apellido" type="text" required />
+			               </div>
+			            </div>
+			            <input class="form-control" name="youremail" placeholder="Correo Electronico: ejemplo@correo.cl" type="email" />
+			            <input class="form-control" name="reenteremail" placeholder="Teléfono" type="email" />
+			            <input class="form-control" name="password" placeholder="Contraseña" type="password" />
+			            <input class="form-control" name="password" placeholder="Ciudad" type="password" />
+			            <input class="form-control" name="password" placeholder="(Opcional) Código de invitación" type="password" />
+			            <button class="btn btn-primary btn-block">Como te enteraste de nosotros?<span class="caret"></span></button>
+			            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!--modal conviertete en conductor-->
+
+	<div class="modal fade" id="conductor" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="container">
+			    <div class="row">
+			      <div class="col-xs-12 col-lg-6">
+			          <form action="#" method="post" class="form" role="form">
+			          	<h4>¿Tienes vehículo de 4 puertas?</h4>
+			            <input class="form-control" name="youremail" placeholder="Si" />
+									<h4>Marca</h4>
+			            <input class="form-control" name="reenteremail" placeholder="Elige la marca del vehículo" type="email" />
+			            <h4>Modelo</h4>
+			            <input class="form-control" name="password" placeholder="Modelo1" type="password" />
+			            <p>¿No ves tu vehículo en esta lista? envía un correo electonico a <a>sociosmdv@uber.com</a></p>
+			            <h4>Año</h4>
+			            <input class="form-control" name="password" placeholder="2017" type="password" />
+			            <h4>Número de la matricula</h4>
+			            <input class="form-control" name="password" placeholder="Número de la matricula" type="password" />
+			            <p>La información de la matricula ayuda a los clientes a identificar tu vehículo</p>
+			            <button class="btn btn-lg btn-primary btn-block" type="submit">ENVIAR</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
 	<!--Scripts-->

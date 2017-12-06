@@ -14,7 +14,7 @@
 	height: auto;
 	background-image: url(../assets/images/taxi.jpg);
 	background-position: 8% 92%;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -43,6 +43,7 @@ font-weight: bold;
 	margin: 10px 0;
 	border: none;
 }
+
 
 #input {
 	padding: 20px 0;
@@ -98,7 +99,7 @@ font-weight: bold;
 	width: 100%;
 	height: auto;
 	background-image: url(../assets/images/conduce.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-position: 40% 60%;
 	background-repeat: no-repeat;
 	color: white;
@@ -107,10 +108,10 @@ font-weight: bold;
 #box-driver {
 	background-color: rgba(0,0,0,0.34);
 	background-size: 100%;
-	padding: 90px 40px;
+	padding: 200px 40px;
 }
 
-#box-driver button{
+#box-driver a{
 	background-color: #F7B617;
 	border: none;
 	color: white;
@@ -209,6 +210,10 @@ font-weight: bold;
 
 .log-in {
 	margin-left: 165px;
+}
+
+.form-control {
+	margin-bottom: 10px;
 }
 
 
