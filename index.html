@@ -29,7 +29,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#!">Viaja</a></li>
             <li><a href="#!">Conduce</a></li>
-            <li><a href="#!">Inicia sesión</a></li>
+            <li><a href="#inicia-sesion" data-toggle="modal">Inicia sesión</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -205,6 +205,66 @@
 			</div>
 		</div>
 	</footer>
+	<!--modales-->
+	<div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="container" style="margin-top:40px">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="center-block">
+								<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+							</div>
+						</div>
+					</div>
+						<div class="row">
+							<div class="col-xs-12 col-lg-6">
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<form role="form" action="#" method="POST">
+											<fieldset>
+												<div class="row">
+												</div>
+												<div class="row">
+													<div class="col-sm-12 col-md-10 col-md-offset-1 ">
+														<div class="form-group">
+															<div class="input-group">
+																<span class="input-group-addon">
+																	<i class="glyphicon glyphicon-user"></i>
+																</span>
+																<input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="input-group">
+																<span class="input-group-addon">
+																	<i class="glyphicon glyphicon-lock"></i>
+																</span>
+																<input class="form-control" placeholder="Password" name="password" type="password" value="">
+															</div>
+														</div>
+														<div class="form-group">
+															<input type="submit" class="btn btn-lg btn-warning log-in" value="LOGING">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+									<div class="panel-footer ">
+										Don't have an account! <a href="#" onClick=""> Sign Up Here </a>
+									</div>
+				        </div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
 	<!--Scripts-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
